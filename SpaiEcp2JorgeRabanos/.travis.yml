@@ -1,0 +1,13 @@
+language: java
+ 
+branches:
+  only:
+    - master
+    - develop
+    
+notifications:
+  email:
+    recipients:
+      - jorge.rpena@alumnos.upm.es
+      
+script: mvn verify

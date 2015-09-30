@@ -31,6 +31,14 @@ public class DecimalCollectionTest {
 		assertEquals(this.decimalCollection.higher(), 2.0, 0);
 	}
 	
-	
+	@Test
+    public void lowerTest() {
+        assertEquals(this.decimalCollection.lower(), 1.2, 0);
+    }
 
+    @Test
+    public void mediaTest() {
+        assertEquals(this.decimalCollection.media(), 1.6, 0);
+    }
+    
 }

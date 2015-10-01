@@ -34,6 +34,30 @@ private Point point;
 	}
 	
 	@Test
+	public void distanceTest() {
+	    Point point2 = new Point(8, 20);
+	    assertEquals(this.point.distancia(point2), 10.4403, 10e-5);
+	}
+
+    @Test
+    public void distanceFromOriginEqualsModuleTest() {
+        Point point2 = new Point();
+        assertEquals(this.point.distancia(point2), this.point.module(), 0);    
+    }
+
+    @Test
+    public void distanceZeroTest() {
+        Point point2 = new Point(point.getX(), point.getY());
+        assertEquals(this.point.distancia(point2), 0, 0);        
+    }
+    
+    @Test
+    public void distanceNegativeCoordinatesTest() {
+        Point point2 = new Point(-5, -10);
+        assertEquals(this.point.distancia(point2), 22.3606, 10e-5);        
+    }
+    
+	@Test
 	public void constructorTest() {
 		Point point2 = new Point();
 		

@@ -72,6 +72,28 @@ public class PointTest {
         assertEquals(point2.toString(), "Point[0,0]");
     }
 
+    public void updateXInCoordinateTest() {
+        // before
+        assertEquals(point.getX(), 5, 0);
+        assertEquals(point.getY(), 10, 0);
+        // update coordinate
+        point.setX(10);
+        // after
+        assertEquals(point.getX(), 10, 0);
+        assertEquals(point.getY(), 10, 0);
+    }
+
+    public void updateYInCoordinateTest() {
+        // before
+        assertEquals(point.getX(), 5, 0);
+        assertEquals(point.getY(), 10, 0);
+        // update coordinate
+        point.setY(20);
+        // after
+        assertEquals(point.getX(), 5, 0);
+        assertEquals(point.getY(), 20, 0);
+    }
+
     public void updateCoordinateTest() {
         // before
         assertEquals(point.getX(), 5, 0);

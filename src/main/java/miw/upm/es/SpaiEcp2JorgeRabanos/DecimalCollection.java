@@ -36,24 +36,5 @@ public class DecimalCollection {
         }
         return higher;
     }
-    
-    public double lower() {
-        double lower = Double.POSITIVE_INFINITY;
-        for (double item : this.collection) {
-            if (item < lower) {
-                lower = item;
-            }
-        }
-        return lower;
-    }
-
-     public double media() {
-        double media = 0.0;
-        for (double item : this.collection) {
-            media += item;
-        }
-        media = media / this.size();
-        return media;
-    }
 
 }

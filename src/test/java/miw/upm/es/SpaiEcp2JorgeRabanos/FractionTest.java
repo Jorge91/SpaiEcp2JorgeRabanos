@@ -41,4 +41,15 @@ public class FractionTest {
         assertFalse(fraction.isMayor(new Fraction()));
         assertTrue(fraction.isMayor(new Fraction(1,2)));
     }
+    
+    @Test
+    public void isEquivalenteTest() {
+        assertTrue(fraction.isEquivalente(new Fraction(6, 8)));
+    }
+    
+    
+    @Test
+    public void isEquivalenteWithNoEquivalenteTest() {
+        assertFalse(fraction.isEquivalente(new Fraction(8, 6)));
+    }
 }

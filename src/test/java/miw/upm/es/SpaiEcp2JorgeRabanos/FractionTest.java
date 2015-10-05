@@ -36,4 +36,9 @@ public class FractionTest {
 		assertEquals(fraction2.getDenominator(), 1, 0);
 	}
 
+    @Test
+    public void isMayorTest() {
+        assertFalse(fraction.isMayor(new Fraction()));
+        assertTrue(fraction.isMayor(new Fraction(1,2)));
+    }
 }

@@ -35,7 +35,7 @@ package miw.upm.es.SpaiEcp2JorgeRabanos;
  * 
  */
 public class Fraction {
-    
+
     private int numerator;
 
     private int denominator;
@@ -52,7 +52,7 @@ public class Fraction {
     public double decimal() {
         return (double) numerator / denominator;
     }
-    
+
     public int getNumerator() {
         return numerator;
     }
@@ -60,8 +60,13 @@ public class Fraction {
     public int getDenominator() {
         return denominator;
     }
-    
-    public boolean isMayor(Fraction fr){
-        return  this.decimal() > fr.decimal();
+
+    public boolean isMayor(Fraction fr) {
+        return this.decimal() > fr.decimal();
     }
+
+    public boolean isEquivalente(Fraction fr) {
+        return (this.getNumerator() * fr.getDenominator() == this.getDenominator() * fr.getNumerator());
+    }
+
 }

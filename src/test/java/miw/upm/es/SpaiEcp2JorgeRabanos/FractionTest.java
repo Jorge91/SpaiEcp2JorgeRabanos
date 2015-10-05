@@ -47,6 +47,11 @@ public class FractionTest {
         assertTrue(fraction.isEquivalente(new Fraction(6, 8)));
     }
     
+    @Test
+    public void isProperFractionTest() {
+        assertTrue(fraction.isProperFracction());
+    }
+    
     
     @Test
     public void isEquivalenteWithNoEquivalenteTest() {

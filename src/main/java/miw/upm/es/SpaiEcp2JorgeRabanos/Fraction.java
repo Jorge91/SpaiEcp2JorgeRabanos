@@ -68,5 +68,9 @@ public class Fraction {
     public boolean isEquivalente(Fraction fr) {
         return (this.getNumerator() * fr.getDenominator() == this.getDenominator() * fr.getNumerator());
     }
+    
+    public boolean isProperFracction(){
+    	return this.denominator > this.numerator;
+    }
 
 }

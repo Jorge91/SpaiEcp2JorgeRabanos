@@ -61,4 +61,7 @@ public class Fraction {
         return denominator;
     }
     
+    public boolean isMayor(Fraction fr){
+        return  this.decimal() > fr.decimal();
+    }
 }

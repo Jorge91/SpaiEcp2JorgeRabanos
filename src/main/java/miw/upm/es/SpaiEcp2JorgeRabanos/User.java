@@ -37,6 +37,22 @@ public class User {
 
     public String getFamilyName() {
         return this.familyName;
+    }    
+    
+    public void setNumber(int number) {
+		this.number = number;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setFamilyName(String familyName) {
+		this.familyName = familyName;
+	}
+
+	public String upperCase(){
+    	return this.fullName().toUpperCase();
     }
 
 }

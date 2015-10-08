@@ -38,5 +38,28 @@ private User user;
 	public void familyNameTest() {
 		assertEquals(this.user.getFamilyName(), "Simpson");
 	}
+	
+	@Test
+	public void setNumberTest() {
+		this.user.setNumber(2);
+		assertEquals(this.user.getNumber(), 2, 0);
+	}
+	
+	@Test
+	public void setNameTest() {
+		this.user.setName("Peter");
+		assertEquals(this.user.getName(), "Peter");
+	}
+	
+	@Test
+	public void setFamilyNameTest() {
+		this.user.setFamilyName("Griffin");
+		assertEquals(this.user.getFamilyName(), "Griffin");
+	}
+	
+	@Test
+	public void upperCaseTest() {
+		assertEquals(this.user.upperCase(), "HOMER SIMPSON");
+	}
 
 }

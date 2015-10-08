@@ -36,4 +36,25 @@ public class FractionTest {
 		assertEquals(fraction2.getDenominator(), 1, 0);
 	}
 
+    @Test
+    public void isMayorTest() {
+        assertFalse(fraction.isMayor(new Fraction()));
+        assertTrue(fraction.isMayor(new Fraction(1,2)));
+    }
+    
+    @Test
+    public void isEquivalenteTest() {
+        assertTrue(fraction.isEquivalente(new Fraction(6, 8)));
+    }
+    
+    @Test
+    public void isProperFractionTest() {
+        assertTrue(fraction.isProperFracction());
+    }
+    
+    
+    @Test
+    public void isEquivalenteWithNoEquivalenteTest() {
+        assertFalse(fraction.isEquivalente(new Fraction(8, 6)));
+    }
 }
